@@ -2,6 +2,8 @@
 
 Pytorch implementation of Context-Sensitive Spelling Correction of Clinical Text via Conditional Independence, CHIL 2022.
 
+<img width="860" alt="image" src="https://user-images.githubusercontent.com/13655756/158745297-e899feb8-e023-4070-b1c1-eda3779aa4c4.png">
+
 This model (CIM) corrects misspellings with a char-based language model and a corruption model (edit distance).
 The model is being pre-trained and evaluated on clinical corpus and datasets.
 Please see the paper (link will be updated) for more detailed explanation.
