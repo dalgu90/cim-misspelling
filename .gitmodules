@@ -1,0 +1,3 @@
+[submodule "scripts/mimic-tools"]
+	path = scripts/mimic-tools
+	url = https://github.com/dalgu90/mimic-tools.git

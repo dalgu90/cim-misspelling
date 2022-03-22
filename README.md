@@ -34,7 +34,7 @@ Please see the paper (link will be updated) for more detailed explanation.
     - MIMIC-III misspelling dataset, or [ClinSpell](https://github.com/clips/clinspell) (Fivez et al., 2017): `scripts/preprocess_clinspell.ipynb`
     - [CSpell](https://lsg3.nlm.nih.gov/LexSysGroup/Projects/cSpell/current/web/index.html) dataset (Lu et al., 2019): `scripts/preprocess_cspell.ipynb`
 
-6. Download the BLUEBert model from [here](https://github.com/ncbi-nlp/bluebert).
+6. Download the BlueBERT model from [here](https://github.com/ncbi-nlp/bluebert).
     - For CIM-Base, please download "BlueBERT-Base, Uncased, PubMed+MIMIC-III"
     - For CIM-Large, please download "BlueBERT-Large, Uncased, PubMed+MIMIC-III"
 
