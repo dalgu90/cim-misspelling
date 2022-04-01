@@ -28,7 +28,7 @@ Please see the paper (link will be updated) for more detailed explanation.
 
 3. Download the English dictionary `english.txt` from [here](https://github.com/dwyl/english-words/tree/7cb484da5de560c11109c8f3925565966015e5a9) (commit 7cb484d) and put under `data/english_words`.
 
-4. Run `scripts/build_vocabulary.ipynb` to build the dictionary.
+4. Run `scripts/build_vocab_corpus.ipynb` to build the dictionary and split the MIMIC-III notes into files.
 
 5. Run the Jupyter notebook for the dataset that you want to download/pre-process:
     - MIMIC-III misspelling dataset, or [ClinSpell](https://github.com/clips/clinspell) (Fivez et al., 2017): `scripts/preprocess_clinspell.ipynb`
