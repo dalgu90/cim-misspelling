@@ -5,7 +5,7 @@ Pytorch implementation of Context-Sensitive Spelling Correction of Clinical Text
 <img width="860" alt="image" src="https://user-images.githubusercontent.com/13655756/158745297-e899feb8-e023-4070-b1c1-eda3779aa4c4.png">
 
 This model (CIM) corrects misspellings with a char-based language model and a corruption model (edit distance).
-The model is being pre-trained and evaluated on clinical corpus and datasets.  
+The model is being pre-trained and evaluated on clinical corpus and datasets.
 Please see the [paper](https://proceedings.mlr.press/v174/kim22b/kim22b.pdf) for more detailed explanation.
 
 
@@ -19,6 +19,12 @@ Please see the [paper](https://proceedings.mlr.press/v174/kim22b/kim22b.pdf) for
 
 
 ## How to Run
+
+### Clone the repo
+
+```
+$ git clone --recursive https://github.com/dalgu90/cim-misspelling.git
+```
 
 ### Data preparing
 
