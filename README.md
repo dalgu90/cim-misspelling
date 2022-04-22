@@ -41,21 +41,23 @@ $ git clone --recursive https://github.com/dalgu90/cim-misspelling.git
     - [CSpell](https://lsg3.nlm.nih.gov/LexSysGroup/Projects/cSpell/current/web/index.html) dataset (Lu et al., 2019): `scripts/preprocess_cspell.ipynb`
     - Synthetic misspelling dataset from the MIMIC-III: `scripts/synthetic_dataset.ipynb`
 
-6. Download the BlueBERT model from [here](https://github.com/ncbi-nlp/bluebert).
+6. Download the BlueBERT model from [here](https://github.com/ncbi-nlp/bluebert) under `bert/ncbi_bert_{base|large}`.
     - For CIM-Base, please download "BlueBERT-Base, Uncased, PubMed+MIMIC-III"
     - For CIM-Large, please download "BlueBERT-Large, Uncased, PubMed+MIMIC-III"
 
 ### Pre-training the char-based LM on MIMIC-III
 
-Specify the location of your MIMIC-III csv files and the BlueBERT files in the pre-training script (`pretrain_cim_base.sh` or `pretrain_cim_large.sh`) and run it.
+Please run `pretrain_cim_base.sh` (CIM-Base) or `pretrain_cim_large.sh`(CIM-Large) and to pretrain the character langauge model of CIM.
 The pre-training will evaluate the LM periodically by correcting synthetic misspells generated from the MIMIC-III data.
 You may need 2~4 GPUs (XXGB+ GPU memory for CIM-Base and YYGB+ for CIM-Large) to pre-train with the batch size 256.
 There are several options you may want to configure:
-- `mimic_csv_dir`: directory of the MIMIC-III csv files
-- `bert_dir`: directory of the BlueBERT files
 - `num_gpus`: number of GPUs
 - `batch_size`: batch size
+- `training_step`: total number of steps to train
+- `init_ckpt`/`init_step`: the checkpoint file/steps to resume pretraining
 - `num_beams`: beam search width for evaluation
+- `mimic_csv_dir`: directory of the MIMIC-III csv splits
+- `bert_dir`: directory of the BlueBERT files
 
 You can also download the pre-trained LMs and put under `model/`:
 - [CIM-Base (12-layer)](#)
@@ -63,7 +65,8 @@ You can also download the pre-trained LMs and put under `model/`:
 
 ### Misspelling Correction with CIM
 
-Please specify the dataset dir and the file to evaluate in the evaluation script (`eval_cim_base.sh` or `eval_cim_large.sh`), and run the script.
+Please specify the dataset dir and the file to evaluate in the evaluation script (`eval_cim_base.sh` or `eval_cim_large.sh`), and run the script.  
+You may want to set `init_step` to specify the checkpoint you want to load
 
 
 ## Cite this work
