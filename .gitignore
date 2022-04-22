@@ -161,10 +161,17 @@ fabric.properties
 
 # Generated dataset
 data
+bert
+results
 
 # Exclude some static files
 !data/mimic_clinspell/clinspell_correction.csv
 !data/mimic3/README.md
 !data/umls/README.md
 !data/english_words/README.md
+!data/lexicon/README.md
 !data/cspell/README.md
+!data/mimic_clinsspell/README.md
+!data/mimic_synthetic/README.md
+!bert/ncbi_bert_base/README.md
+!bert/ncbi_bert_large/README.md

@@ -11,7 +11,7 @@ Please see the [paper](https://proceedings.mlr.press/v174/kim22b/kim22b.pdf) for
 
 ## Requirements
 
-- Python 3.9 and packages in `requirements.txt`
+- Python 3.8 and packages in `requirements.txt`
 - The MIMIC-III dataset (v1.4): [PhysioNet link](https://physionet.org/)
 - BlueBERT: [GitHub link](https://github.com/ncbi-nlp/bluebert)
 - The SPECIALIST Lexicon of UMLS: [LSG website](https://lhncbc.nlm.nih.gov/LSG/Projects/lexicon/current/web/release/)
@@ -39,6 +39,7 @@ $ git clone --recursive https://github.com/dalgu90/cim-misspelling.git
 5. Run the Jupyter notebook for the dataset that you want to download/pre-process:
     - MIMIC-III misspelling dataset, or [ClinSpell](https://github.com/clips/clinspell) (Fivez et al., 2017): `scripts/preprocess_clinspell.ipynb`
     - [CSpell](https://lsg3.nlm.nih.gov/LexSysGroup/Projects/cSpell/current/web/index.html) dataset (Lu et al., 2019): `scripts/preprocess_cspell.ipynb`
+    - Synthetic misspelling dataset from the MIMIC-III: `scripts/synthetic_dataset.ipynb`
 
 6. Download the BlueBERT model from [here](https://github.com/ncbi-nlp/bluebert).
     - For CIM-Base, please download "BlueBERT-Base, Uncased, PubMed+MIMIC-III"
