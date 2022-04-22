@@ -36,7 +36,7 @@ python run.py \
     --dict_matching \
     --training_step=500000 \
     --display_iter=100 \
-    --eval_iter=5000 \
+    --eval_iter=25000 \
     --lr 0.0001 \
     #--init_ckpt=$output_dir/ckpt.pkl \
     #--init_step=100000
