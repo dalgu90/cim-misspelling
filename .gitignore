@@ -165,6 +165,7 @@ bert
 results
 
 # Exclude some static files
+!data/dataset.py
 !data/mimic_clinspell/clinspell_correction.csv
 !data/mimic3/README.md
 !data/umls/README.md
