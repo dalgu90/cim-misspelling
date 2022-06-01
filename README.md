@@ -59,9 +59,9 @@ There are several options you may want to configure:
 - `mimic_csv_dir`: directory of the MIMIC-III csv splits
 - `bert_dir`: directory of the BlueBERT files
 
-You can also download the pre-trained LMs and put under `model/`:
-- [CIM-Base (12-layer)](#)
-- [CIM-Large (24-layer)](#)
+You can also download the pre-trained LMs and put under `model/` (e.g. the CIM-base checkpoint is placed as `model/cim_base/ckpt-475000.pkl`):
+- [CIM-Base (12-layer)](https://drive.google.com/file/d/1h-0ivx8H1lJB3s00SSOW4YAtvlGnW81s/view?usp=sharing)
+- [CIM-Large (24-layer)](https://drive.google.com/file/d/1gFPC1uSNR8VOCCZqb7RVc76tlUN1wBYB/view?usp=sharing)
 
 ### Misspelling Correction with CIM
 
